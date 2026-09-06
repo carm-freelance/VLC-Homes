@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLC Homes | Agencia Inmobiliaria Boutique en Valencia</title>
+<meta name="description" content="VLC Homes es una agencia inmobiliaria boutique especializada en la compraventa y alquiler de propiedades exclusivas en Valencia. Trato cercano, discreción absoluta y una selección curada de residencias singulares.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cookies.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark">VLC Homes</span>
+      <span class="logo-sub">Boutique Real Estate · Valencia</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#propiedades">Propiedades</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contacto" class="btn btn-primary btn-sm">Concertar Cita</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#propiedades">Propiedades</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto" class="btn btn-primary">Concertar Cita</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow"><i class="dot"></i>Boutique Real Estate · Valencia</span>
+        <h1>El arte de habitar<br>con calma en Valencia.</h1>
+        <p class="hero-lead">
+          Una selección curada de residencias singulares, áticos con carácter y villas junto al
+          mar. Acompañamos a compradores, vendedores e inversores con un servicio inmobiliario
+          privado, transparente y profundamente personal.
+        </p>
+        <div class="hero-ctas">
+          <a href="#propiedades" class="btn btn-primary">
+            Explorar Propiedades
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contacto" class="btn btn-outline">Valorar mi Propiedad</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">+140M€</span>
+            <span class="stat-label">Gestionados con discreción</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">18 años</span>
+            <span class="stat-label">De trayectoria en Valencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1:1</span>
+            <span class="stat-label">Trato directo y personal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80"
+               alt="Salón luminoso de estilo mediterráneo con arcos de obra vista, suelo de terracota y luz cálida de atardecer, Valencia">
+          <div class="hero-badge-float">
+            <span class="hero-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <div>
+              <p class="badge-title">Arquitectura Luminosa</p>
+              <p class="badge-sub">Orientación sureste · Luz natural todo el año</p>
+            </div>
+          </div>
+        </div>
+        <span class="hero-tag">Valencia Capital</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROPIEDADES DESTACADAS ==================== -->
+  <section class="section properties" id="propiedades">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow-label">Propiedades Destacadas</span>
+          <h2>Residencias que definen<br>un estilo de vida</h2>
+        </div>
+        <p class="section-lead">
+          Cada inmueble de nuestra cartera ha sido seleccionado personalmente atendiendo a su
+          luminosidad, ubicación, calidad constructiva e integridad arquitectónica.
+        </p>
+      </div>
+
+      <div class="filters" id="property-filters">
+        <button class="filter-btn is-active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="venta">En Venta</button>
+        <button class="filter-btn" data-filter="alquiler">En Alquiler</button>
+        <button class="filter-btn" data-filter="atico">Áticos</button>
+        <button class="filter-btn" data-filter="villa">Villas</button>
+      </div>
+
+      <div class="property-grid" id="property-grid">
+
+        <article class="property-card" data-tags="venta atico">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Ático con terraza en el barrio de Ruzafa, Valencia">
+            <span class="tag tag-accent">Exclusiva</span>
+            <span class="tag tag-light">Ruzafa</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Ensanche · Ruzafa</span>
+            <h3>Ático con Terraza en Ruzafa</h3>
+            <p>Terraza continua de 40 m² con vistas abiertas, reforma integral de alta calidad y luz de poniente.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>145 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>3 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 baños</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Precio de venta</span>
+                <span class="price">1.250.000&nbsp;€</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card" data-tags="venta villa">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Villa con piscina privada en El Saler, Valencia">
+            <span class="tag tag-secondary">Vistas al mar</span>
+            <span class="tag tag-light">El Saler</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Costa · El Saler</span>
+            <h3>Villa con Piscina en El Saler</h3>
+            <p>Parcela de 800 m² con piscina, jardín mediterráneo y acceso directo a la playa a pie.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>320 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>5 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>4 baños</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Precio de venta</span>
+                <span class="price">2.100.000&nbsp;€</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card" data-tags="venta">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80" alt="Piso señorial reformado en el Ensanche de Valencia">
+            <span class="tag tag-secondary">Patrimonio</span>
+            <span class="tag tag-light">Ensanche</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Ensanche Noble</span>
+            <h3>Piso Señorial en el Ensanche</h3>
+            <p>Edificio de principios de siglo, techos altos con molduras originales y suelos de mosaico hidráulico.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>110 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 baños</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Precio de venta</span>
+                <span class="price">890.000&nbsp;€</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card" data-tags="venta">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80" alt="Casa reformada en el barrio del Carmen, Valencia">
+            <span class="tag tag-accent">Recién reformada</span>
+            <span class="tag tag-light">El Carmen</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Ciutat Vella · El Carmen</span>
+            <h3>Casa Reformada en El Carmen</h3>
+            <p>Vigas de madera originales, patio interior propio y acabados artesanales en cada estancia.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>130 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>3 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2 baños</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Precio de venta</span>
+                <span class="price">675.000&nbsp;€</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card" data-tags="alquiler villa">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Chalet con jardín en las afueras de Valencia">
+            <span class="tag tag-secondary">Alquiler</span>
+            <span class="tag tag-light">La Eliana</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Afueras · La Eliana</span>
+            <h3>Chalet con Jardín en La Eliana</h3>
+            <p>Vivienda unifamiliar de una planta con porche cubierto, jardín arbolado y garaje para dos vehículos.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>280 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>4 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>3 baños</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Alquiler mensual</span>
+                <span class="price">3.200&nbsp;€/mes</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card" data-tags="alquiler">
+          <div class="property-media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Loft luminoso en el barrio del Cabanyal, Valencia">
+            <span class="tag tag-secondary">Alquiler</span>
+            <span class="tag tag-light">El Cabanyal</span>
+          </div>
+          <div class="property-body">
+            <span class="property-kicker">Marítimo · El Cabanyal</span>
+            <h3>Loft Luminoso en El Cabanyal</h3>
+            <p>Espacio diáfano de diseño con fachada de azulejo tradicional restaurada, a dos minutos de la playa.</p>
+            <div class="property-specs">
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 20V6a1 1 0 011-1h4v4h8V5h4a1 1 0 011 1v14M3 20h18M3 14h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>65 m²</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 18h18M5 9V6a2 2 0 012-2h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1 hab.</span>
+              <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v3a4 4 0 01-4 4H8a4 4 0 01-4-4v-3zM7 12V6a2 2 0 014 0M18 6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>1 baño</span>
+            </div>
+            <div class="property-footer">
+              <div>
+                <span class="price-label">Alquiler mensual</span>
+                <span class="price">1.450&nbsp;€/mes</span>
+              </div>
+              <a href="#contacto" class="btn btn-ghost btn-sm">Ver Ficha</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="no-results" hidden>No hay propiedades que coincidan con este filtro por ahora. <a href="#contacto">Contáctanos</a> y te avisaremos.</p>
+
+      <div class="section-cta">
+        <a href="#contacto" class="btn btn-outline">Ver todas las propiedades disponibles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE NOSOTROS ==================== -->
+  <section class="section about" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80" alt="Equipo de VLC Homes revisando planos en un estudio cálido en Valencia">
+        <div class="about-badge">
+          <span class="about-badge-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <p class="badge-title">Inmobiliaria de Autor</p>
+            <p class="badge-sub">Desde 2007 · Valencia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow-label">El Método Humano</span>
+        <h2>Una relación basada en<br>el tiempo, la calma y el rigor</h2>
+        <p class="section-lead">
+          Rechazamos la aceleración propia del sector tradicional. Para nosotros una vivienda es
+          un contenedor de vivencias, por eso limitamos deliberadamente el número de propiedades
+          que gestionamos a la vez, garantizando dedicación exclusiva a cada cliente.
+        </p>
+
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.5L21 11l-6.6 2.5L12 20l-2.4-6.5L3 11l6.6-2.5L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h4>Curaduría sin saturación</h4>
+              <p>Solo representamos viviendas singulares con valor arquitectónico genuino y calidades contrastadas.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 11V7a4 4 0 018 0v4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <div>
+              <h4>Discreción absoluta</h4>
+              <p>Gran parte de nuestras operaciones se cierran sin publicación pública, cuidando la intimidad de cada familia.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.7-7 10-4-2.3-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h4>Acompañamiento integral</h4>
+              <p>Coordinamos tasación, revisión legal y notaría de principio a fin, con un único interlocutor de confianza.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICIOS ==================== -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow-label">Nuestros Servicios</span>
+        <h2>Un acompañamiento a medida<br>en cada etapa</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Compraventa Exclusiva</h3>
+          <p>Búsqueda, negociación y cierre de operaciones de compra o venta con criterio arquitectónico y total transparencia.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-6 8 6v12M9 21v-5h6v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Alquiler Selectivo</h3>
+          <p>Gestión integral de alquileres de larga estancia con inquilinos verificados y contratos a medida.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 15l4-5 3 3 5-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Valoración Patrimonial</h3>
+          <p>Tasación honesta basada en datos reales de mercado, sin sobrevalorar para ganar la exclusiva.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 15a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c1.5-3 4.5-5 8-5s6.5 2 8 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Búsqueda Off-Market</h3>
+          <p>Acceso a una cartera privada de propiedades no publicadas para compradores e inversores selectos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIOS ==================== -->
+  <section class="section testimonials" id="opiniones">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow-label">Confianza Comprobada</span>
+        <h2>Voces que comparten nuestra visión</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p>«Vender nuestro piso en el Ensanche requería sensibilidad y discreción. El equipo de VLC Homes coordinó solo tres visitas con compradores realmente cualificados. Cerramos la operación en tres semanas.»</p>
+          <footer>
+            <span class="avatar">MR</span>
+            <div>
+              <cite>Marta R. &amp; Vicente S.</cite>
+              <span>Propietarios en Pla del Remei</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>«Buscábamos una segunda residencia con carácter desde fuera de España. Nos evitaron viajes innecesarios con información honesta y detallada. Hoy nuestra casa en El Carmen es nuestro refugio.»</p>
+          <footer>
+            <span class="avatar">LK</span>
+            <div>
+              <cite>Lukas &amp; Astrid Keller</cite>
+              <span>Compradores en el Barrio del Carmen</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO ==================== -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="contact-panel">
+        <div class="contact-intro">
+          <span class="eyebrow-label">Hablemos</span>
+          <h2>Demos el siguiente paso<br>en Valencia, juntos</h2>
+          <p class="section-lead">
+            Ya busque su próximo hogar o desee una valoración confidencial de su propiedad,
+            le atenderemos en nuestra oficina de Ciutat Vella o por videollamada.
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6.1-7-11a7 7 0 1114 0c0 4.9-7 11-7 11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              Calle de la Paz 14, 1º · 46003 Valencia
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 005 5L14 14l5 2v4a2 2 0 01-2 2C9.6 22 2 14.4 2 5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              <a href="tel:+34960234500">+34 960 234 500</a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              <a href="mailto:hola@vlchomes.com">hola@vlchomes.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre">Nombre y apellidos *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Elena de la Torre" required>
+              <span class="field-error">Por favor, indica tu nombre.</span>
+            </div>
+            <div class="form-field">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="ej. elena@correo.com" required>
+              <span class="field-error">Introduce un correo electrónico válido.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+            </div>
+            <div class="form-field">
+              <label for="motivo">Motivo de consulta</label>
+              <select id="motivo" name="motivo">
+                <option value="comprar">Quiero comprar</option>
+                <option value="vender">Quiero vender</option>
+                <option value="alquilar">Quiero alquilar</option>
+                <option value="valorar">Valorar mi propiedad</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué tipo de vivienda buscas o los detalles de tu propiedad..." required></textarea>
+            <span class="field-error">Cuéntanos brevemente en qué podemos ayudarte.</span>
+          </div>
+
+          <label class="checkbox-field">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <span class="checkbox-box" aria-hidden="true"></span>
+            <span class="checkbox-text">
+              He leído y acepto la <a href="politica-privacidad.html">Política de Privacidad</a> y
+              consiento el tratamiento de mis datos para responder a mi solicitud, conforme al RGPD. *
+            </span>
+          </label>
+
+          <div class="form-footer">
+            <p class="form-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+              Confidencialidad garantizada. Respondemos en menos de 24 horas.
+            </p>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensaje
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <p class="form-success" id="form-success" role="status" hidden>
+            Gracias por escribirnos. Un asesor de VLC Homes se pondrá en contacto contigo muy pronto.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-mark">VLC Homes</span>
+      <span class="logo-sub">Boutique Real Estate · Valencia</span>
+      <p>Curaduría de residencias exclusivas en el litoral valenciano. Una perspectiva pausada,
+      basada en la luz natural, la honestidad y la discreción absoluta.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Propiedades</h4>
+      <ul>
+        <li><a href="#propiedades">Ensanche &amp; Ruzafa</a></li>
+        <li><a href="#propiedades">Ciutat Vella</a></li>
+        <li><a href="#propiedades">El Cabanyal</a></li>
+        <li><a href="#propiedades">Costa &amp; Alrededores</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Oficina</h4>
+      <ul class="footer-contact">
+        <li>Calle de la Paz 14, 1º</li>
+        <li>46003 Valencia, España</li>
+        <li><a href="tel:+34960234500">+34 960 234 500</a></li>
+        <li><a href="mailto:hola@vlchomes.com">hola@vlchomes.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> VLC Homes. Todos los derechos reservados.</p>
+    <div class="footer-legal">
+      <a href="aviso-legal.html">Aviso Legal</a>
+      <a href="politica-privacidad.html">Política de Privacidad</a>
+      <a href="politica-cookies.html">Política de Cookies</a>
+      <button type="button" class="footer-legal-btn" onclick="window.VLCCookies && window.VLCCookies.openPreferences()">Preferencias de Cookies</button>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+</html>
